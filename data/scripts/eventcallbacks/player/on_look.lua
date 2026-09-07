@@ -44,24 +44,6 @@ local function handleItemDescription(inspectedThing, lookDistance, player)
 	return descriptionText
 end
 
-
-		-- Look KILL AND DEATH --
-		if thing:isPlayer() and not thing:getGroup():getAccess() then
-			local killStorage = 884734
-			local deathStorage = 884735
-			local resetStorage = 500
-			local FightPoints = Storage.PvpFight.Points
-			local killAmount, deathAmount, resetAmount, FPoints = thing:getStorageValue(killStorage), thing:getStorageValue(deathStorage), thing:getStorageValue(resetStorage), thing:getStorageValue(FightPoints)
-			if killAmount == -1 then killAmount = 0 end
-			if deathAmount == -1 then deathAmount = 0 end
-			if resetAmount == -1 then resetAmount = 0 end
-			if FPoints == -1 then FPoints = 0 end
-
-
-
-			description = description .. '\nKilleds: [' ..killAmount..'] and ' .. 'Deaths: ['..deathAmount..']' .. '\nResets: ['..resetAmount..']' .. '\nFight Points: ['..FPoints..']'
-		end
-		
 local function handleCreatureDescription(inspectedThing, lookDistance)
 	local descriptionText = inspectedThing:getDescription(lookDistance)
 
@@ -142,6 +124,26 @@ local callback = EventCallback("PlayerOnLookBaseEvent")
 
 function callback.playerOnLook(player, inspectedThing, inspectedPosition, lookDistance)
 	local descriptionText
+
+
+	
+		-- Look KILL AND DEATH --
+		if inspectedThing:isPlayer() and not inspectedThing:getGroup():getAccess() then
+			local killStorage = 884734
+			local deathStorage = 884735
+			local resetStorage = 500
+			local FightPoints = Storage.PvpFight.Points
+			local killAmount, deathAmount, resetAmount, FPoints = thing:getStorageValue(killStorage), thing:getStorageValue(deathStorage), thing:getStorageValue(resetStorage), thing:getStorageValue(FightPoints)
+			if killAmount == -1 then killAmount = 0 end
+			if deathAmount == -1 then deathAmount = 0 end
+			if resetAmount == -1 then resetAmount = 0 end
+			if FPoints == -1 then FPoints = 0 end
+
+
+
+			description = description .. '\nKilleds: [' ..killAmount..'] and ' .. 'Deaths: ['..deathAmount..']' .. '\nResets: ['..resetAmount..']' .. '\nFight Points: ['..FPoints..']'
+		end
+		
 
 	if inspectedThing:isItem() then
 		descriptionText = handleItemDescription(inspectedThing, lookDistance, player)
