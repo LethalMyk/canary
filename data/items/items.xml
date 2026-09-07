@@ -85835,40 +85835,6 @@ Granted by TibiaGoals.com"/>
 		<attribute key="duration" value="20"/>
 		<attribute key="decayTo" value="0"/>
 	</item>
-<item id="43568" article="a" name="dead Darklight Matter">
-		<attribute key="duration" value="60"/>
-		<attribute key="decayTo" value="0"/>
-		<attribute key="containersize" value="25"/>
-	</item>
-	<item id="43569" article="a" name="dead Darklight Matter">
-		<attribute key="duration" value="300"/>
-		<attribute key="decayTo" value="43568"/>
-		<attribute key="containersize" value="25"/>
-	</item>
-	<item id="43570" article="a" name="dead Darklight Matter">
-		<attribute key="duration" value="300"/>
-		<attribute key="decayTo" value="43569"/>
-		<attribute key="containersize" value="25"/>
-	</item>
-	<item id="43571" article="a" name="dead Darklight Matter">
-		<attribute key="duration" value="10"/>
-		<attribute key="decayTo" value="43570"/>
-		<attribute key="containersize" value="25"/>
-	</item>
-
-	<item id="43851" article="a" name="darklight matter (object)">
-		<attribute key="weight" value="175"/>
-	</item>
-
-	<item id="43853" article="a" name="darklight core (object)">
-		<attribute key="weight" value="200"/>
-	</item>
-	<item id="43858" article="a" name="basalt crumb">
-		<attribute key="weight" value="90"/>
-	</item>
-	<item id="43849" article="a" name="rotten root">
-		<attribute key="weight" value="105"/>
-	</item>
 
 	<item id="60855" article="a" name="Lethal Death Ring">
 		<attribute key="primarytype" value="rings"/>
