@@ -1,2 +1,52 @@
 <?xml version="1.0"?>
-<houses />
+<houses>
+	<house name="" houseid="2690" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="27" clientid="0" beds="0" />
+	<house name="" houseid="2691" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="28" clientid="0" beds="0" />
+	<house name="" houseid="2692" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="15" clientid="0" beds="0" />
+	<house name="" houseid="2693" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="8" clientid="0" beds="0" />
+	<house name="" houseid="2694" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="13" clientid="0" beds="0" />
+	<house name="" houseid="2695" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="13" clientid="0" beds="0" />
+	<house name="" houseid="2696" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="6" clientid="0" beds="0" />
+	<house name="" houseid="2697" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="7" clientid="0" beds="0" />
+	<house name="" houseid="2718" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="10" clientid="0" beds="0" />
+	<house name="" houseid="2721" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="1" clientid="0" beds="0" />
+	<house name="" houseid="2722" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="2" clientid="0" beds="0" />
+	<house name="" houseid="2723" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="25" clientid="0" beds="0" />
+	<house name="" houseid="2724" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="28" clientid="0" beds="0" />
+	<house name="" houseid="2725" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="31" clientid="0" beds="0" />
+	<house name="" houseid="2727" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="30" clientid="0" beds="0" />
+	<house name="" houseid="2729" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="24" clientid="0" beds="0" />
+	<house name="" houseid="2730" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="24" clientid="0" beds="0" />
+	<house name="" houseid="2731" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="24" clientid="0" beds="0" />
+	<house name="" houseid="2821" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="79" clientid="0" beds="0" />
+	<house name="" houseid="2918" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="18" clientid="0" beds="0" />
+	<house name="" houseid="2919" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="17" clientid="0" beds="0" />
+	<house name="" houseid="2947" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="26" clientid="0" beds="0" />
+	<house name="" houseid="2948" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="14" clientid="0" beds="0" />
+	<house name="" houseid="2949" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="25" clientid="0" beds="0" />
+	<house name="" houseid="2952" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="32" clientid="0" beds="0" />
+	<house name="" houseid="2953" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="30" clientid="0" beds="0" />
+	<house name="" houseid="2976" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="24" clientid="0" beds="0" />
+	<house name="" houseid="2977" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="30" clientid="0" beds="0" />
+	<house name="" houseid="2978" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="12" clientid="0" beds="0" />
+	<house name="" houseid="2979" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="12" clientid="0" beds="0" />
+	<house name="" houseid="2980" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="12" clientid="0" beds="0" />
+	<house name="" houseid="2981" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="23" clientid="0" beds="0" />
+	<house name="" houseid="2982" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="23" clientid="0" beds="0" />
+	<house name="" houseid="2983" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="23" clientid="0" beds="0" />
+	<house name="" houseid="3001" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="17" clientid="0" beds="0" />
+	<house name="" houseid="3002" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="15" clientid="0" beds="0" />
+	<house name="" houseid="3003" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="0" clientid="0" beds="0" />
+	<house name="" houseid="3160" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="57" clientid="0" beds="0" />
+	<house name="" houseid="3270" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="54" clientid="0" beds="0" />
+	<house name="" houseid="3271" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="48" clientid="0" beds="0" />
+	<house name="" houseid="3273" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="2" clientid="0" beds="0" />
+	<house name="" houseid="3276" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="54" clientid="0" beds="0" />
+	<house name="" houseid="3277" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="64" clientid="0" beds="0" />
+	<house name="" houseid="3278" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="1" clientid="0" beds="0" />
+	<house name="" houseid="3314" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="20" clientid="0" beds="0" />
+	<house name="" houseid="3315" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="18" clientid="0" beds="0" />
+	<house name="" houseid="3316" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="12" clientid="0" beds="0" />
+	<house name="" houseid="3317" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="8" clientid="0" beds="0" />
+	<house name="" houseid="3615" entryx="0" entryy="0" entryz="0" rent="0" townid="0" size="17" clientid="0" beds="0" />
+</houses>
