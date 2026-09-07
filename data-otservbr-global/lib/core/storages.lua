@@ -147,7 +147,7 @@ TaskPoints = {
 	BashmuActiveTask = 190010,
 	BashmuLevelUp = 193010,
 
-	Roshamuulmuul = 191111,
+	Roshamuul = 191111,
 	RoshamuulTask = 181011,
 	RoshamuulActiveTask = 190011,
 	RoshamuulLevelUp = 193011,

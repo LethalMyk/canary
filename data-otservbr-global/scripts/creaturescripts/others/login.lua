@@ -10,7 +10,7 @@ function playerLogin.onLogin(player)
 		player:setStorageValue(Storage.SevenDays.Oberon, 0) 
 		end
 		if player:getStorageValue(Storage.SevenDays.Scarlett) <0 then
-		player:setStorageValue(Storage.SevenDays.Scarllet, 0) 
+		player:setStorageValue(Storage.SevenDays.Scarlett, 0) 
 		end
 		if player:getStorageValue(Storage.SevenDays.Drume) <0 then
 		player:setStorageValue(Storage.SevenDays.Drume, 0) 
