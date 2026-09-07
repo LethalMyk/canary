@@ -76,6 +76,273 @@ Reserved player action storage key ranges (const.h)
 ]]
 
 Storage = {
+
+
+	
+	-- Custom
+
+	ResetSystem = {
+
+		
+		Resets = 500
+
+},
+
+
+
+
+PvpFight = {
+
+	Check = 100009,
+	Points = 100010,
+	Level = 100011,
+	Hp = 100012,
+	Mana = 100013,
+	Cap = 100014,
+	Speed = 100015
+	
+},
+
+TaskPoints = {
+	Normal = 100008,
+
+	Energy = 191000,
+	EnergyTask = 190001,
+	EnergyActiveTask = 190000,
+	EnergyLevelUp = 100016,
+
+
+	Fire = 191014,
+	FireTask = 181004,
+	FireActiveTask = 190004,
+	FireLevelUp = 193004,
+
+	Ice = 191015,
+	IceTask = 181005,
+	IceActiveTask = 190005,
+	IceLevelUp = 193005,
+
+	TrueAsura = 191016,
+	TrueAsuraTask = 181006,
+	TrueAsuraActiveTask = 190006,
+	TrueAsuraLevelUp = 193006,
+
+	Ferumbras = 191017,
+	FerumbrasTask = 181007,
+	FerumbrasActiveTask = 190007,
+	FerumbrasLevelUp = 193007,
+
+	Girtabilu = 191018,
+	GirtabiluTask = 181008,
+	GirtabiluActiveTask = 190008,
+	GirtabiluLevelUp = 193008,
+
+	Goanna = 191019,
+	GoannaTask = 181009,
+	GoannaActiveTask = 190009,
+	GoannaLevelUp = 193009,
+
+	Bashmu = 191110,
+	BashmuTask = 181010,
+	BashmuActiveTask = 190010,
+	BashmuLevelUp = 193010,
+
+	Roshamuulmuul = 191111,
+	RoshamuulTask = 181011,
+	RoshamuulActiveTask = 190011,
+	RoshamuulLevelUp = 193011,
+
+	Deathling = 191112,
+	DeathlingTask = 181012,
+	DeathlingActiveTask = 190012,
+	DeathlingLevelUp = 193012,
+
+	Skeletin = 191113,
+	SkeletinTask = 181013,
+	SkeletinActiveTask = 190013,
+	SkeletinLevelUp = 193013,
+
+	BurningIssavi = 191114,
+	BurningIssaviTask = 181014,
+	BurningIssaviActiveTask = 190014,
+	BurningIssaviLevelUp = 193014,
+
+	Buried = 191115,
+	BuriedTask = 181015,
+	BuriedActiveTask = 190015,
+	BuriedLevelUp = 193015,
+
+	FlinsyAlminha = 191116,
+	FlinsyAlminhaTask = 181016,
+	FlinsyAlminhaActiveTask = 190016,
+	FlinsyAlminhaLevelUp = 193016,
+
+	Cobra = 191117,
+	CobraTask = 181017,
+	CobraActiveTask = 190017,
+	CobraLevelUp = 193017,
+
+	Falcon = 191118,
+	FalconTask = 181018,
+	FalconActiveTask = 190018,
+	FalconLevelUp = 193018,
+
+	ElfFogo = 191119,
+	ElfFogoTask = 181019,
+	ElfFogoActiveTask = 190019,
+	ElfFogoLevelUp = 193019,
+
+	ElfGelo = 191120,
+	ElfGeloTask = 181020,
+	ElfGeloActiveTask = 190020,
+	ElfGeloLevelUp = 193020,
+
+	RipperSpectre = 191121,
+	RipperSpectreTask = 181021,
+	RipperSpectreActiveTask = 190021,
+	RipperSpectreLevelUp = 193021,
+
+	GazerSpectre = 191122,
+	GazerSpectreTask = 181022,
+	GazerSpectreActiveTask = 190022,
+	GazerSpectreLevelUp = 193002,
+
+	BursterSpectre = 191123,
+	BursterSpectreTask = 181023,
+	BursterSpectreActiveTask = 190023,
+	BursterSpectreLevelUp = 193023,
+
+	Sphinx = 191124,
+	SphinxTask = 181024,
+	SphinxActiveTask = 190024,
+	SphinxLevelUp = 193024,
+	
+	Hellspawn = 191125,
+	HellspawnTask = 181025,
+	HellspawnActiveTask = 190025,
+	HellspawnLevelUp = 193025,
+	
+	Hero = 191126,
+	HeroTask = 181026,
+	HeroActiveTask = 190026,
+	HeroLevelUp = 193026,
+	
+	Shirek = 191127,
+	ShirekTask = 181027,
+	ShirekActiveTask = 190027,
+	ShirekLevelUp = 193027,
+	
+	Sulphider = 191128,
+	SulphiderTask = 181028,
+	SulphiderActiveTask = 190028,
+	SulphiderLevelUp = 193028,
+	
+	HulkingBehe = 191129,
+	HulkingBeheTask = 181029,
+	HulkingBeheActiveTask = 190029,
+	HulkingBeheLevelUp = 193029,
+	
+	RBlood1 = 191130,
+	RBlood1Task = 181030,
+	RBlood1ActiveTask = 190030,
+	RBlood1LevelUp = 193030,
+	
+	RBlood2 = 191131,
+	RBlood2Task = 181031,
+	RBlood2ActiveTask = 190031,
+	RBlood2LevelUp = 193031,
+	
+	RBlood3 = 191132,
+	RBlood3Task = 181032,
+	RBlood3ActiveTask = 190032,
+	RBlood3LevelUp = 193032,
+	
+	RBlood4 = 191133,
+	RBlood4Task = 181033,
+	RBlood4ActiveTask = 190033,
+	RBlood4LevelUp = 193033,
+	
+	Rotten = 191134,
+	RottenTask = 181034,
+	RottenActiveTask = 190034,
+	RottenLevelUp = 193034,
+	
+	Cloak = 191135,
+	CloakTask = 181035,
+	CloakActiveTask = 190035,
+	CloakLevelUp = 193035,
+	
+	InfernalDemon = 191136,
+	InfernalDemonTask = 181036,
+	InfernalDemonActiveTask = 190036,
+	InfernalDemonLevelUp = 193036,
+	
+	Peixinho = 191137,
+	PeixinhoTask = 181037,
+	PeixinhoActiveTask = 190037,
+	PeixinhoLevelUp = 193037,
+	
+	DarkThais = 191138,
+	DarkThaisTask = 181038,
+	DarkThaisActiveTask = 190038,
+	DarkThaisLevelUp = 193038,
+
+	MinoOramond = 191139,
+	MinoOramondTask = 181039,
+	MinoOramondActiveTask = 190039,
+	MinoOramondLevelUp = 193039,
+
+
+
+
+},
+
+
+
+
+	Podium = {
+		One = 70991,
+		Two = 70992,
+		Three = 70993,
+		Four= 70994,
+		Five = 70095,
+		Six = 70096,
+		Kills1 = 70097,
+		Kills2 = 70098,
+		Kills3 = 70099,
+		Dist1 =70100,
+		Dist2 =70101,
+		Dist3 =70102,
+		Sword1 =70103,
+		Axe1 =70104,
+		Club1 =70105
+
+	},
+
+
+
+
+	SevenDays = {
+		Oberon = 100000,
+		Scarlett = 100001,
+		Drume = 100002,
+		Eldritch = 100003,
+		Gnome = 100004,
+		Ratmiral = 100005,
+		Monster = 100006,
+		Timira = 100007
+	},
+
+
+	--Auras 
+	BlueAura = 63000,
+	YellowAura = 63001,
+	GreenAura = 63002,
+	RedAura = 63003,
+
+
+
+
 	-- General storages
 	Dragonfetish = 30003,
 	EdronRopeQuest = 30004,

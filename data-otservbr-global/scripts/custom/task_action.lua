@@ -24,6 +24,8 @@ function endTaskModalWindow(player, storage)
 		title = title,
 		message = newmessage
 	}
+	local coinsacc = player:getTibiaCoins()
+	local points = player:getStorageValue(Storage.PvpFight.Points)
 	if completion and data.rewards then
 		if player:getStorageValue(taskOptions.bonusReward) >= 1 then
 				if taskOptions.selectLanguage == 1 then
@@ -33,7 +35,11 @@ function endTaskModalWindow(player, storage)
 				end
 			for _, info in pairs (data.rewards) do
 				if info[1] == "exp" then
-					player:addExperience(info[2]*taskOptions.bonusRate)
+					player:addExperience(info[1]*taskOptions.bonusRate)
+					player:addTibiaCoins(info[1]*taskOptions.bonusRate)
+					player:setStorageValue(Storage.PvpFight.Points, points + info[2]*taskOptions.bonusRate)
+
+
 					player:getPosition():sendMagicEffect(CONST_ME_PRISMATIC_SPARK)
 					player:say('Exp: '.. info[2]*taskOptions.bonusRate ..'', TALKTYPE_MONSTER_SAY)
 					if taskOptions.selectLanguage == 1 then
@@ -44,6 +50,7 @@ function endTaskModalWindow(player, storage)
 				elseif tonumber(info[1]) then
 					window:addChoice("- ".. info[2]*taskOptions.bonusRate .." "..ItemType(info[1]):getName())
 					player:addItem(info[1], info[2]*taskOptions.bonusRate)
+
 					player:setStorageValue(taskOptions.uniqueTaskStorage, -1)
 					player:getPosition():sendSingleSoundEffect(SOUND_EFFECT_TYPE_ACTION_LEVEL_ACHIEVEMENT, player:isInGhostMode() and nil or player)
 					player:getPosition():sendMagicEffect(CONST_ME_PRISMATIC_SPARK)
@@ -52,7 +59,6 @@ function endTaskModalWindow(player, storage)
 					else
 					player:say('Others: '..  info[2]*taskOptions.bonusRate .. ' ' ..ItemType(info[1]):getName(), TALKTYPE_MONSTER_SAY)
 					end
-					player:setStorageValue(storagecheck, player:getStorageValue(storagecheck) + 1)
 				end
 			end
 		else
@@ -64,6 +70,8 @@ function endTaskModalWindow(player, storage)
 			for _, info in pairs (data.rewards) do
 				if info[1] == "exp" then
 					player:addExperience(info[2])
+					player:addTibiaCoins(info[2]*taskOptions.bonusRate)
+					player:setStorageValue(Storage.PvpFight.Points, points + info[2]*taskOptions.bonusRate)
 					player:getPosition():sendMagicEffect(CONST_ME_PRISMATIC_SPARK)
 					player:say('Exp: '.. info[2] ..'', TALKTYPE_MONSTER_SAY)
 					if taskOptions.selectLanguage == 1 then
@@ -72,8 +80,9 @@ function endTaskModalWindow(player, storage)
 						window:addChoice("- Experience: "..info[2])
 					end
 				elseif tonumber(info[1]) then
+
 					window:addChoice("- ".. info[2] .." "..ItemType(info[1]):getName())
-					player:addItem(info[1], info[2])
+					player:addItem(info[1], info[2])					
 					player:setStorageValue(taskOptions.uniqueTaskStorage, -1)
 					player:getPosition():sendSingleSoundEffect(SOUND_EFFECT_TYPE_ACTION_LEVEL_ACHIEVEMENT, player:isInGhostMode() and nil or player)
 					player:getPosition():sendMagicEffect(CONST_ME_PRISMATIC_SPARK)
@@ -82,7 +91,6 @@ function endTaskModalWindow(player, storage)
 					else
 					player:say('Others: '.. ItemType(info[1]):getName() .. '', TALKTYPE_MONSTER_SAY)
 					end
-					player:setStorageValue(storagecheck, player:getStorageValue(storagecheck) + 1)
 				end
 			end
 		end
@@ -120,6 +128,10 @@ function confirmTaskModalWindow(player, storage)
 	local data = getTaskByStorage(storage)
 	if taskOptions.selectLanguage == 1 then
 		window:addChoice(task_pt_br.choiceMonsterName..""..data.name)
+		window:addChoice(task_pt_br.choiceMonsterRace.."")
+		for _, races in pairs (data.races) do
+		window:addChoice("["..races.."]")
+		end
 		window:addChoice(task_pt_br.choiceMonsterKill..""..data.total)
 		if data.type == "daily" then
 			window:addChoice(task_pt_br.choiceEveryDay)
@@ -129,7 +141,11 @@ function confirmTaskModalWindow(player, storage)
 			window:addChoice(task_pt_br.choiceOnce)
 		end
 	else
-		window:addChoice("Monster name: "..data.name)
+		window:addChoice("Task name: "..data.name)
+		window:addChoice("Monster races: ")
+		for _, races in pairs (data.races) do
+			window:addChoice("["..races.."]")
+		end
 		window:addChoice("Necessary deaths: "..data.total)
 		if data.type == "daily" then
 			window:addChoice("You can repeat: Every day!")
@@ -154,7 +170,7 @@ function confirmTaskModalWindow(player, storage)
 						window:addChoice("- Experience: "..info[2]*taskOptions.bonusRate)
 					end
 				elseif tonumber(info[1]) then
-					window:addChoice("- " .. info[2]*taskOptions.bonusRate .. " ".. ItemType(info[1]):getName())
+					window:addChoice("* " .. info[2]*taskOptions.bonusRate .. " ".. ItemType(info[1]):getName())
 				end
 			end
 		else
@@ -166,7 +182,7 @@ function confirmTaskModalWindow(player, storage)
 						window:addChoice("- Experience: "..info[2])
 					end
 				elseif tonumber(info[1]) then
-					window:addChoice("- " .. info[2] .. " ".. ItemType(info[1]):getName())
+					window:addChoice("* " .. info[2] .. " ".. ItemType(info[1]):getName())
 				end
 			end
 		end

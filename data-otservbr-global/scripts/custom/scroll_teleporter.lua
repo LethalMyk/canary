@@ -9,7 +9,7 @@ local function sendEffects(position, effect, pid)
     if savePos[pid] then
         if savePos[pid].Enabled then
             local player = Player(pid)
-            if isPlayer(player) then
+            if player:isPlayer() then
                 position:sendMagicEffect(effect, player)
                 addEvent(sendEffects, 400, position, effect, pid, CS)
             end
