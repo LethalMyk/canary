@@ -14,8 +14,8 @@ function PvpStep.onStepIn(creature, item, position, toPosition, fromPosition)
     end
 
     -- Verifica se o jogador já recebeu os benefícios
-    local checkRblood3 = Storage.TaskPoints.Rblood3
-    if player:getStorageValue(checkRblood3) == 1 then
+    local checkRBlood3 = Storage.TaskPoints.RBlood3
+    if player:getStorageValue(checkRBlood3) == 1 then
         return true
     end
 
@@ -27,8 +27,8 @@ function PvpStep.onStepIn(creature, item, position, toPosition, fromPosition)
     
     
     -- Define um valor de level respawn
-    local Rblood3levelup = player:getStorageValue(Storage.TaskPoints.Rblood3LevelUp)
-    local levelresp = 650 + Rblood3levelup
+    local RBlood3levelup = player:getStorageValue(Storage.TaskPoints.RBlood3LevelUp)
+    local levelresp = 650 + RBlood3levelup
     player:setLevel(levelresp)
      -- Define os valores de armazenamento
     local storagelevel = Storage.PvpFight.Level 
@@ -60,12 +60,12 @@ function PvpStep.onStepIn(creature, item, position, toPosition, fromPosition)
             player:setStorageValue(storagehp, 185 + (hpvoc * (playerlevel -8)))
             player:setStorageValue(storagemana, 90 + (manavoc * (playerlevel -8)))
             player:setStorageValue(check, 1)
-            player:setStorageValue(checkRblood3, 1)    -- Define que o jogador está no respawn
+            player:setStorageValue(checkRBlood3, 1)    -- Define que o jogador está no respawn
         
         
 --[[                 -- Checa se o jogador está com a task do respawn ativa
-            local Rblood3activetask = Storage.TaskPoints.Rblood3AtiveTask
-            if player:getStorageValue(Rblood3activetask) <= 0 then      
+            local RBlood3activetask = Storage.TaskPoints.RBlood3AtiveTask
+            if player:getStorageValue(RBlood3activetask) <= 0 then      
             end
             ]]          
             
