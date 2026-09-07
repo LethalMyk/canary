@@ -14,8 +14,9 @@ function PvpStep.onStepIn(creature, item, position, toPosition, fromPosition)
     end
 
     -- Verifica se o jogador já recebeu os benefícios
-    local checkice = Storage.TaskPoints.ice
-    if player:getStorageValue(checkice) == 1 then
+    local checkIce = Storage.TaskPoints.Ice
+
+    if player:getStorageValue(checkIce) == 1 then
         return true
     end
 
@@ -24,51 +25,46 @@ function PvpStep.onStepIn(creature, item, position, toPosition, fromPosition)
     local hpvoc = player:getVocation():getHealthGain()
     local manavoc = player:getVocation():getManaGain()
     local capvoc = player:getVocation():getCapacityGain()
-    
-    
-    -- Define um valor de level respawn
-    local icelevelup = player:getStorageValue(Storage.TaskPoints.iceLevelUp)
-    local levelresp = 650 + icelevelup
+
+    -- Define o level do respawn
+    local IceLevelUp = player:getStorageValue(Storage.TaskPoints.IceLevelUp)
+    local levelresp = 650 + IceLevelUp
+
     player:setLevel(levelresp)
-     -- Define os valores de armazenamento
-    local storagelevel = Storage.PvpFight.Level 
+
+    -- Define os Storages
+    local storagelevel = Storage.PvpFight.Level
     local storagehp = Storage.PvpFight.Hp
     local storagemana = Storage.PvpFight.Mana
     local storagecap = Storage.PvpFight.Cap
     local check = Storage.PvpFight.Check
-    -- Define os novos valores máximos de vida, mana e capacidade do jogador
+
+    -- Define os novos valores máximos
     local newMaxHealth = 185 + (hpvoc * (levelresp - 8))
     local newMaxMana = 90 + (manavoc * (levelresp - 8))
     local newMaxCap = 470 + (capvoc * (levelresp - 8))
-	local PvpPoints = player:getStorageValue(Storage.PvpFight.Points)
+
+    local PvpPoints = player:getStorageValue(Storage.PvpFight.Points)
     local newSpeed = 117 + levelresp - 8 + PvpPoints
 
-    
-
-
+    -- Aplica os novos atributos
     player:setMaxHealth(newMaxHealth)
     player:setMaxMana(newMaxMana)
-    player:setCapacity(newMaxCap)  
-        player:addHealth(newMaxHealth)
-        player:addMana(newMaxMana)
-        player:setSpeed(newSpeed)
-        
+    player:setCapacity(newMaxCap)
 
-        
-            -- Define os valores de armazenamento
-            player:setStorageValue(storagelevel, playerlevel - (PvpPoints * 5))
-            player:setStorageValue(storagehp, 185 + (hpvoc * (playerlevel -8)))
-            player:setStorageValue(storagemana, 90 + (manavoc * (playerlevel -8)))
-            player:setStorageValue(check, 1)
-            player:setStorageValue(checkice, 1)    -- Define que o jogador está no respawn
-        
-        
---[[                 -- Checa se o jogador está com a task do respawn ativa
-            local iceactivetask = Storage.TaskPoints.iceAtiveTask
-            if player:getStorageValue(iceactivetask) <= 0 then      
-            end
-            ]]          
-            
+    player:addHealth(newMaxHealth)
+    player:addMana(newMaxMana)
+
+    player:setSpeed(newSpeed)
+
+    -- Salva os valores nos Storages
+    player:setStorageValue(storagelevel, playerlevel - (PvpPoints * 5))
+    player:setStorageValue(storagehp, 185 + (hpvoc * (playerlevel - 8)))
+    player:setStorageValue(storagemana, 90 + (manavoc * (playerlevel - 8)))
+    player:setStorageValue(check, 1)
+    player:setStorageValue(checkIce, 1)
+
+    return true
 end
 
 PvpStep:type("stepin")

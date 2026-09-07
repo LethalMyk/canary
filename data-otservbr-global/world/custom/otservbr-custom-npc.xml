@@ -3,8 +3,14 @@
 	<npc centerx="1014" centery="1024" centerz="5" radius="2">
 		<npc name="Tamoril" x="-1" y="0" z="5" spawntime="90" direction="2" />
 	</npc>
+	<npc centerx="26270" centery="31723" centerz="5" radius="1">
+		<npc name="Mortis" x="0" y="0" z="5" spawntime="60" />
+	</npc>
 	<npc centerx="32921" centery="32068" centerz="5" radius="1">
 		<npc name="Boozer" x="0" y="0" z="5" spawntime="60" />
+	</npc>
+	<npc centerx="28828" centery="32089" centerz="5" radius="1">
+		<npc name="Tefrit" x="0" y="0" z="5" spawntime="60" />
 	</npc>
 	<npc centerx="32315" centery="32844" centerz="5" radius="1">
 		<npc name="Dark Rodo" x="0" y="0" z="5" spawntime="60" />
@@ -90,14 +96,26 @@
 	<npc centerx="33466" centery="31324" centerz="7" radius="1">
 		<npc name="Alternative Rock" x="0" y="0" z="7" spawntime="60" />
 	</npc>
+	<npc centerx="26231" centery="31769" centerz="7" radius="1">
+		<npc name="Gederas" x="0" y="0" z="7" spawntime="60" />
+	</npc>
+	<npc centerx="26240" centery="31773" centerz="7" radius="1">
+		<npc name="Sandomo" x="0" y="0" z="7" spawntime="60" />
+	</npc>
 	<npc centerx="32326" centery="31780" centerz="7" radius="1">
 		<npc name="Eva" x="0" y="0" z="7" spawntime="60" />
+	</npc>
+	<npc centerx="26256" centery="31782" centerz="7" radius="1">
+		<npc name="Maun" x="0" y="0" z="7" spawntime="60" />
 	</npc>
 	<npc centerx="32315" centery="31783" centerz="7" radius="1">
 		<npc name="Tibra" x="0" y="0" z="7" spawntime="60" />
 	</npc>
 	<npc centerx="32333" centery="31786" centerz="7" radius="1">
 		<npc name="Liane" x="0" y="0" z="7" spawntime="60" />
+	</npc>
+	<npc centerx="26228" centery="31788" centerz="7" radius="1">
+		<npc name="Captain Chelop" x="0" y="0" z="7" spawntime="60" />
 	</npc>
 	<npc centerx="32348" centery="31793" centerz="7" radius="1">
 		<npc name="Dark Rodo" x="-1" y="0" z="7" spawntime="60" />
@@ -113,6 +131,51 @@
 	</npc>
 	<npc centerx="33241" centery="31835" centerz="7" radius="1">
 		<npc name="Paladin Seller" x="0" y="0" z="7" spawntime="60" />
+	</npc>
+	<npc centerx="28747" centery="31890" centerz="7" radius="1">
+		<npc name="Shimun" x="0" y="0" z="7" spawntime="60" />
+	</npc>
+	<npc centerx="28855" centery="31890" centerz="7" radius="1">
+		<npc name="Guard Senet" x="0" y="0" z="7" spawntime="60" />
+	</npc>
+	<npc centerx="28892" centery="31891" centerz="7" radius="1">
+		<npc name="Ramina" x="0" y="0" z="7" spawntime="60" />
+	</npc>
+	<npc centerx="28893" centery="31894" centerz="7" radius="1">
+		<npc name="Ninos" x="0" y="0" z="7" spawntime="60" />
+	</npc>
+	<npc centerx="28905" centery="31902" centerz="7" radius="1">
+		<npc name="Khanna" x="0" y="0" z="7" spawntime="60" />
+	</npc>
+	<npc centerx="28937" centery="31902" centerz="7" radius="1">
+		<npc name="Atur" x="0" y="0" z="7" spawntime="60" />
+	</npc>
+	<npc centerx="28911" centery="31909" centerz="7" radius="1">
+		<npc name="Yonan" x="0" y="0" z="7" spawntime="60" />
+	</npc>
+	<npc centerx="28899" centery="31910" centerz="7" radius="1">
+		<npc name="Faloriel" x="0" y="0" z="7" spawntime="60" />
+	</npc>
+	<npc centerx="28893" centery="31914" centerz="7" radius="1">
+		<npc name="Inkaef" x="0" y="0" z="7" spawntime="60" />
+	</npc>
+	<npc centerx="28904" centery="31915" centerz="7" radius="1">
+		<npc name="Eliyas" x="0" y="0" z="7" spawntime="60" />
+	</npc>
+	<npc centerx="28926" centery="31923" centerz="7" radius="1">
+		<npc name="Guard Bazaya" x="0" y="0" z="7" spawntime="60" />
+	</npc>
+	<npc centerx="28860" centery="31924" centerz="7" radius="1">
+		<npc name="Ninev" x="0" y="0" z="7" spawntime="60" />
+	</npc>
+	<npc centerx="28902" centery="31926" centerz="7" radius="1">
+		<npc name="Narsai" x="0" y="0" z="7" spawntime="60" />
+	</npc>
+	<npc centerx="27053" centery="31981" centerz="7" radius="1">
+		<npc name="Tamara" x="0" y="0" z="7" spawntime="60" />
+	</npc>
+	<npc centerx="27040" centery="31996" centerz="7" radius="1">
+		<npc name="Ethan" x="0" y="0" z="7" spawntime="60" />
 	</npc>
 	<npc centerx="31713" centery="32050" centerz="7" radius="1">
 		<npc name="Pvp Destruction" x="0" y="0" z="7" spawntime="60" />
@@ -137,6 +200,12 @@
 	</npc>
 	<npc centerx="32316" centery="32861" centerz="7" radius="1">
 		<npc name="Marcus" x="0" y="0" z="7" spawntime="60" />
+	</npc>
+	<npc centerx="26322" centery="31835" centerz="8" radius="1">
+		<npc name="Snake Eye" x="0" y="0" z="8" spawntime="60" />
+	</npc>
+	<npc centerx="26364" centery="31893" centerz="8" radius="1">
+		<npc name="Stricken Soul" x="0" y="0" z="8" spawntime="60" />
 	</npc>
 	<npc centerx="32647" centery="31904" centerz="8" radius="1">
 		<npc name="Lokur" x="0" y="0" z="8" spawntime="60" />
@@ -194,5 +263,14 @@
 	</npc>
 	<npc centerx="31444" centery="32111" centerz="8" radius="1">
 		<npc name="Vera" x="0" y="0" z="8" spawntime="60" />
+	</npc>
+	<npc centerx="27642" centery="31825" centerz="14" radius="1">
+		<npc name="Urks The Mute" x="0" y="0" z="14" spawntime="60" />
+	</npc>
+	<npc centerx="27652" centery="31834" centerz="14" radius="1">
+		<npc name="Gnomadness" x="0" y="0" z="14" spawntime="60" />
+	</npc>
+	<npc centerx="27733" centery="31806" centerz="15" radius="1">
+		<npc name="Gnomish Operative (Catching)" x="0" y="0" z="15" spawntime="60" />
 	</npc>
 </npcs>
